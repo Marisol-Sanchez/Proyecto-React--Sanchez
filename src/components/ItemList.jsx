@@ -4,18 +4,18 @@ import Item from './Item'
 const ItemList = ({productos}) => {
 
     return (
-        <> 
+        
+        <>
             {productos.map ((p) => {
-                    return (
-                        <Item
-                            key = {p.id}
-                            id = {p.id}
-                            nombre = {p.nombre}
-                            descripcion = {p.descripcion}
-                        /> 
-                    )
-                })
-            }
+                return (
+                    <Item
+                        key = {p.id}
+                        id = {p.id}
+                        nombre = {p.nombre}
+                        descripcion = {p.descripcion}
+                    /> 
+                )
+            })}
         </>
     )
 }

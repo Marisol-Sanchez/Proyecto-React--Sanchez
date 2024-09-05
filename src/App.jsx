@@ -11,15 +11,17 @@ const App = () => {
   <>
 
   <BrowserRouter>
-    <NavBar/>
-    <Routes> 
 
+    <NavBar/>
+    
+    <Routes> 
       <Route exact path= "/" element= {<Home/>} />
       <Route exact path= "/categorias/:categoria" element= {<ItemListContainer/>} />
       <Route exact path= "/item/:id" element= {<ItemDetailContainer/>} />
-
     </Routes>
+
     <Footer/>
+
   </BrowserRouter>
   
   </>
